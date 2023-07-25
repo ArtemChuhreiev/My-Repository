@@ -1,0 +1,122 @@
+:root {
+  --background-body-color: #11131f;
+  --body-color: #f6f5ef;
+}
+
+body {
+  color: var(--body-color);
+  background-color: var(--background-body-color);
+}
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Base styles */
+/* .section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+} */
+
+/* .container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+}
+/**
+  |============================
+  | footer
+  |============================
+*/
+.footer-container {
+  padding-top: 41px;
+  padding-bottom: 14px;
+}
+
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-text-nav {
+}
+
+.footer-text-nav:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.logo-container {
+  margin-bottom: 41px;
+}
+
+.footer-privacy {
+  display: flex;
+  flex-direction: row;
+}
+
+.privacy-text {
+  margin-right: 14px;
+}
